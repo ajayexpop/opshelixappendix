@@ -1,0 +1,1 @@
+window.AB_TERMS={};
