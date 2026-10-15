@@ -290,7 +290,15 @@ a.pill:hover { background: var(--tint); color: var(--heading); text-decoration: 
 .fx-filter { display: flex; align-items: center; gap: 8px; flex: 1; max-width: 380px; height: 40px; padding: 0 12px; border-radius: var(--r-input); border: 1px solid var(--line-strong); background: var(--surface); color: var(--text-3); }
 .fx-filter input { flex: 1; border: 0; outline: 0; background: none; font: 400 15px/1 var(--f-body); color: var(--text); }
 .fx-count { font: 500 13px/20px var(--f-body); color: var(--text-3); }
-.fx-wrap { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+.fx-wrap { border: 1px solid var(--line); border-radius: 16px; overflow-x: auto; }
+.fx td, .fx th { overflow-wrap: break-word; }
+.fx.fx2 th:nth-child(1) { width: 30%; }
+table.fx:not(.fx2) { table-layout: fixed; }
+.fx:not(.fx2) th, .fx:not(.fx2) td { padding-left: 10px; padding-right: 10px; }
+.fx:not(.fx2) th:nth-child(1) { width: 46px; } .fx:not(.fx2) th:nth-child(2) { width: 15%; }
+.fx:not(.fx2) th:nth-child(3) { width: 15%; } .fx:not(.fx2) th:nth-child(4) { width: 15%; }
+.fx:not(.fx2) th:nth-child(5) { width: 16%; } .fx:not(.fx2) th:nth-child(6) { width: 13%; }
+.fx:not(.fx2) th:nth-child(8) { width: 36px; }
 table.fx { width: 100%; border-collapse: collapse; font: 400 14px/21px var(--f-body); }
 .fx th { text-align: left; font: 600 12px/16px var(--f-body); letter-spacing: .08em; text-transform: uppercase; color: var(--text-3); padding: 12px 14px; background: var(--sunk); border-bottom: 1px solid var(--line); }
 .fx td { padding: 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
